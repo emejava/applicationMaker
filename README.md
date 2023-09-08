@@ -4,7 +4,7 @@
 
   
 ## TO RUN AND WRITE THIS PROJECT'S CODES :
-📂 there is a folder named "needs4all" that you're gonna need BUT what's in it? :<br>
+📂 there is a folder named "need4all" that you're gonna need BUT what's in it? :<br>
 👾 JDK v11<br>
 🐱 Tomcat v10.1.5<br>
 🔮 AND everything that we will <b>NEED TO USE</b>.
