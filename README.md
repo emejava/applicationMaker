@@ -1,2 +1,7 @@
-# applicationMaker
-FIY my teammates: To run this app read readme text file.
+# <div align="center">
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Arial+Script&weight=500&size=30&duration=7000&pause=2000&color=000000&width=700&lines=Welcome+to+team+of+coding+Application+Maker.)](https://git.io/typing-svg)
+</div>   
+
+
+
+
