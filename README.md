@@ -8,6 +8,12 @@
 👾 JDK v11<br>
 🐱 Tomcat v10.1.5<br>
 🔮 AND everything that we will <b>NEED TO USE</b>.
+
+## NOTES :
+1.At the beginning of day, <b>PULL</b> project.
+2.Before push anything, <b>PULL</b> project.
+3.If you get <b>CONFLICT</b> after pull, put your new codes in a text file and reversion to last version of project,
+            after that <b>PULL</b> project and put your code init then <b>PUSH</b> please.
  
 
 # <h3><img src="https://user-images.githubusercontent.com/31341013/215384145-99d3ea7f-9fab-4b7e-a476-dbfc533b1412.gif" height="25"/> Tech Stack:
