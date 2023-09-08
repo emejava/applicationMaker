@@ -10,9 +10,10 @@
 🔮 AND everything that we will <b>NEED TO USE</b>.
 
 ## ⚠️ ATTENTION :
-<b>1.</b>At the beginning of day, <b>PULL</b> project.<br><br>
-<b>2.</b>Before push anything, <b>PULL</b> project.<br><br>
-<b>3.</b>If you get <b>CONFLICT</b> after pull, put your new codes in a text file and reversion to last version of project,<br>
+<b>1.</b>How clone project in intellij: file > new > project from version control > url = https://github.com/emejava/applicationMaker
+<b>2.</b>At the beginning of day, <b>PULL</b> project.<br><br>
+<b>3.</b>Before push anything, <b>PULL</b> project.<br><br>
+<b>4.</b>If you get <b>CONFLICT</b> after pull, put your new codes in a text file and reversion to last version of project,<br>
             after that <b>PULL</b> project and put your code init then <b>PUSH</b> please.
  
 
