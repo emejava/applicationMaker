@@ -7,7 +7,7 @@
 📂 there is a folder named "needs4all" that you're gonna need BUT what's in it? :<br>
 👾 JDK v11<br>
 🐱 Tomcat v10.1.5<br>
-🔮 AND everything that we will <b>NEEDED TO USE</b>.
+🔮 AND everything that we will <b>NEED TO USE</b>.
  
 
 # <h3><img src="https://user-images.githubusercontent.com/31341013/215384145-99d3ea7f-9fab-4b7e-a476-dbfc533b1412.gif" height="25"/> Tech Stack:
