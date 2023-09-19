@@ -9,21 +9,17 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Html {
-    private String lang;
-    private Head head;
-    private Body body;
+public class Link {
+    private String rel;
+    private String href;
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " lang=" +
-                lang +
+                " href=" + "\"" + href + "\"" +
+                " rel=" + "\"" + rel + "\"" +
                 ">" +
-                head +
-                "\n" +
-                body +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

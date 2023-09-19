@@ -9,21 +9,22 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Html {
-    private String lang;
-    private Head head;
-    private Body body;
+public class A extends Element{
+    private String href;
+    private String text;
+
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " lang=" +
-                lang +
+                " id=" + "\"" + getId() + "\"" +
+                " style=" + "\"" + getStyle() + "\"" +
+                " class=" + "\"" + getClassAttribute() + "\"" +
+                " href=" +
+                "\"" + href + "\"" +
                 ">" +
-                head +
-                "\n" +
-                body +
+                text +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";
