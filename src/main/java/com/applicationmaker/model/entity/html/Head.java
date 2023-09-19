@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,19 +9,21 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Meta {
-    private String name;
-    private String content;
-    private String charSet;
+public class Head {
+    private Title title;
+    private Meta meta;
+    private Link link;
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " name=" + "\"" + name + "\"" +
-                " content=" + "\"" + content + "\"" +
-                " charset=" + "\"" + charSet + "\"" +
                 ">" +
+                title +
+                "\n" +
+                meta +
+                "\n" +
+                link +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

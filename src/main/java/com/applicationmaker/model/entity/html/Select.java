@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,8 +9,9 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Td extends Element {
-    private String text;
+public class Select extends Element{
+    private Option option;
+    private String name;
 
     @Override
     public String toString() {
@@ -19,8 +20,9 @@ public class Td extends Element {
                 " id=" + "\"" + getId() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
                 " class=" + "\"" + getClassAttribute() + "\"" +
+                " name= " + name +
                 ">" +
-                text +
+                option +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

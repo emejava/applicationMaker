@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,21 +9,18 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Html {
-    private String lang;
-    private Head head;
-    private Body body;
+public class Div extends Element{
+    private String text;
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " lang=" +
-                lang +
+                " id=" + "\"" + getId() + "\"" +
+                " style=" + "\"" + getStyle() + "\"" +
+                " class=" + "\"" + getClassAttribute() + "\"" +
                 ">" +
-                head +
-                "\n" +
-                body +
+                text +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

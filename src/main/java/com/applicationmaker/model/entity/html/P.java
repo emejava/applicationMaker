@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

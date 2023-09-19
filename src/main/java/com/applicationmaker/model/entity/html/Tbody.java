@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,17 +9,18 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Link {
-    private String rel;
-    private String href;
+public class Tbody extends Element {
+    private Tr tr;
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " href=" + "\"" + href + "\"" +
-                " rel=" + "\"" + rel + "\"" +
+                " id=" + "\"" + getId() + "\"" +
+                " style=" + "\"" + getStyle() + "\"" +
+                " class=" + "\"" + getClassAttribute() + "\"" +
                 ">" +
+                tr +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

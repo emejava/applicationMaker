@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,18 +9,17 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Span extends Element{
-    private String text;
+public class Link {
+    private String rel;
+    private String href;
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
-                " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
+                " href=" + "\"" + href + "\"" +
+                " rel=" + "\"" + rel + "\"" +
                 ">" +
-                text +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

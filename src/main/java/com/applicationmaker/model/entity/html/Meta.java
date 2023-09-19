@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,20 +9,19 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Label extends Element{
-    private String forId;
-    private String text;
+public class Meta {
+    private String name;
+    private String content;
+    private String charSet;
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
-                " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
-                " for= " + forId +
+                " name=" + "\"" + name + "\"" +
+                " content=" + "\"" + content + "\"" +
+                " charset=" + "\"" + charSet + "\"" +
                 ">" +
-                text +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

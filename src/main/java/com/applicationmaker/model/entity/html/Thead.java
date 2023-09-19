@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,10 +9,8 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Input extends Element{
-    private String type;
-    private String name;
-    private String placeHolder;
+public class Thead extends Element{
+    private Tr tr;
 
     @Override
     public String toString() {
@@ -21,10 +19,8 @@ public class Input extends Element{
                 " id=" + "\"" + getId() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
                 " class=" + "\"" + getClassAttribute() + "\"" +
-                " type= " + type +
-                " name= " + name +
-                " placeholder= " + placeHolder +
                 ">" +
+                tr +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

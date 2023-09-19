@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,10 +9,10 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class A extends Element{
-    private String href;
+public class Button extends Element{
+    private String type;
     private String text;
-
+    private String onClick;
 
     @Override
     public String toString() {
@@ -21,8 +21,10 @@ public class A extends Element{
                 " id=" + "\"" + getId() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
                 " class=" + "\"" + getClassAttribute() + "\"" +
-                " href=" +
-                "\"" + href + "\"" +
+                " type=" +
+                "\"" + type + "\"" +
+                " onclick=" +
+                "\"" + onClick + "\"" +
                 ">" +
                 text +
                 "</" +

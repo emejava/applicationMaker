@@ -1,4 +1,4 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,9 +9,9 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Table extends Element{
-    private Thead thead;
-    private Tbody tbody;
+public class Form extends Element{
+    private String action;
+    private String method;
 
     @Override
     public String toString() {
@@ -20,10 +20,11 @@ public class Table extends Element{
                 " id=" + "\"" + getId() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
                 " class=" + "\"" + getClassAttribute() + "\"" +
+                " action=" +
+                "\"" + action + "\"" +
+                " method=" +
+                "\"" + method + "\"" +
                 ">" +
-                thead +
-                "\n" +
-                tbody +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

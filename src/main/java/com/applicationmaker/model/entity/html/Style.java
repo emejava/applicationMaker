@@ -1,8 +1,8 @@
-package entity.html;
+package com.applicationmaker.model.entity.html;
 
-import entity.html.enums.BorderStyle;
-import entity.html.enums.FontFamily;
-import entity.html.enums.TextAlign;
+import com.applicationmaker.model.entity.html.enums.BorderStyle;
+import com.applicationmaker.model.entity.html.enums.FontFamily;
+import com.applicationmaker.model.entity.html.enums.TextAlign;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

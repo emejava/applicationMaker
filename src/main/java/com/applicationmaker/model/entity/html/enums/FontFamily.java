@@ -1,4 +1,4 @@
-package entity.html.enums;
+package com.applicationmaker.model.entity.html.enums;
 
 public enum FontFamily {
        serif ,
