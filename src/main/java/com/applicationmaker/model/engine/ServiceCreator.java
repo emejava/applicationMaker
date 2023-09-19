@@ -1,9 +1,5 @@
 package com.applicationmaker.model.engine;
 
-import java.lang.reflect.Field;
-import java.util.List;
-
-
 public class ServiceCreator {
 
     private String entityName;
