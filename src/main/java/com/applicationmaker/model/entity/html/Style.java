@@ -21,6 +21,8 @@ public class Style {
     private String border;
     private BorderStyle borderStyle;
     private FontFamily fontFamily;
+    private FontFamily width;
+    private FontFamily height;
 
     @Override
     public String toString() {
