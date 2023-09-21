@@ -31,11 +31,11 @@ public class Style {
                 " color:" + color + ";" +
                 " background-color:" + color + ";" +
                 " text-align:" + textAlign + ";" +
-                " margin:" + textAlign + ";" +
+                " margin:" + String.valueOf(textAlign).replace("_","-")  + ";" +
                 " padding:" + padding + ";" +
                 " border:" + border + ";" +
-                " border-style:" + borderStyle + ";" +
-                " font-family:" + fontFamily + ";" +
+                " border-style:" + String.valueOf(borderStyle).replace("x","d") + ";" +
+                " font-family:" + String.valueOf(fontFamily).replace("_","-")  + ";" +
                 "\"";
     }
 }
