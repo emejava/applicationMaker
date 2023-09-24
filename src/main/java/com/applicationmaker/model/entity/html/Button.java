@@ -18,13 +18,11 @@ public class Button extends Element{
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
-                " type=" +
-                "\"" + type + "\"" +
-                " onclick=" +
-                "\"" + onClick + "\"" +
+                " class=" + "\"" + getClassName() + "\"" +
+                " type=" + "\"" + type + "\"" +
+                " onclick=" + "\"" + onClick + "\"" +
                 ">" +
                 text +
                 "</" +

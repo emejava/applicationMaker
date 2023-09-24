@@ -34,7 +34,7 @@ public class Style {
                 " margin:" + String.valueOf(textAlign).replace("_","-")  + ";" +
                 " padding:" + padding + ";" +
                 " border:" + border + ";" +
-                " border-style:" + String.valueOf(borderStyle).replace("x","d") + ";" +
+                " border-style:" + borderStyle + ";" +
                 " font-family:" + String.valueOf(fontFamily).replace("_","-")  + ";" +
                 "\"";
     }

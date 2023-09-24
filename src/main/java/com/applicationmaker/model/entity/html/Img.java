@@ -17,9 +17,9 @@ public class Img extends Element{
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
+                " class=" + "\"" + getClassName() + "\"" +
                 " src=" + "\"" + src + "\"" +
                 " alt=" + "\"" + alt + "\"" +
                 ">";

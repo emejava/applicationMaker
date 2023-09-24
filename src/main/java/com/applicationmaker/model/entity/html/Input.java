@@ -1,5 +1,6 @@
 package com.applicationmaker.model.entity.html;
 
+import com.applicationmaker.model.entity.html.enums.InputType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,20 +11,22 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @SuperBuilder
 public class Input extends Element{
-    private String type;
+    private InputType type;
     private String name;
     private String placeHolder;
+    private String value;
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
-                " type= " + type +
-                " name= " + name +
-                " placeholder= " + placeHolder +
+                " class=" + "\"" + getClassName() + "\"" +
+                " type= " + "\"" + String.valueOf(type).replace("_","-") + "\"" +
+                " name= " + "\"" +  name + "\"" +
+                " placeholder= " + "\"" +  placeHolder + "\"" +
+                " value= " + "\"" +  value + "\"" +
                 ">" +
                 "</" +
                 getClass().getName().toLowerCase() +
