@@ -9,7 +9,7 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Span extends Element{
+public class Footer extends Element{
     private String text;
 
     @Override

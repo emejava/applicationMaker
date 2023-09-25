@@ -17,11 +17,10 @@ public class Body extends Element{
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
-                " dir=" +
-                "\"" + dir + "\"" +
+                " class=" + "\"" + getClassName() + "\"" +
+                " dir=" + "\"" + dir + "\"" +
                 ">" +
                 tags +
                 "</" +

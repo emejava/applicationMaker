@@ -6,7 +6,7 @@ public enum BorderStyle {
         dotted ,
         dashed ,
         solid ,
-//        double ,
+        doubled ,
         groove ,
         ridge ,
         inset ,

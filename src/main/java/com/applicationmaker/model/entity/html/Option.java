@@ -18,10 +18,10 @@ public class Option extends Element {
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
-                " value= " + value +
+                " class=" + "\"" + getClassName() + "\"" +
+                " value= " + "\"" + value + "\"" +
                 selected +
                 ">" +
                 text +

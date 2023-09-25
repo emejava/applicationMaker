@@ -5,14 +5,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
+import java.util.List;
+
 @NoArgsConstructor
 @Getter
 @Setter
 @SuperBuilder
 public class Element {
-    private String id;
-    private String classAttribute;
-    private Style style;
+    private String idName;
+    private String className;
+    private List<Style> style;
 
     @Override
     public String toString() {

@@ -18,11 +18,10 @@ public class A extends Element{
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
-                " href=" +
-                "\"" + href + "\"" +
+                " class=" + "\"" + getClassName() + "\"" +
+                " href=" + "\"" + href + "\"" +
                 ">" +
                 text +
                 "</" +
