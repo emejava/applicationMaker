@@ -21,6 +21,8 @@ public class Style {
     private String border;
     private BorderStyle borderStyle;
     private FontFamily fontFamily;
+    private FontFamily width;
+    private FontFamily height;
 
     @Override
     public String toString() {
@@ -29,11 +31,11 @@ public class Style {
                 " color:" + color + ";" +
                 " background-color:" + color + ";" +
                 " text-align:" + textAlign + ";" +
-                " margin:" + textAlign + ";" +
+                " margin:" + String.valueOf(textAlign).replace("_","-")  + ";" +
                 " padding:" + padding + ";" +
                 " border:" + border + ";" +
                 " border-style:" + borderStyle + ";" +
-                " font-family:" + fontFamily + ";" +
+                " font-family:" + String.valueOf(fontFamily).replace("_","-")  + ";" +
                 "\"";
     }
 }

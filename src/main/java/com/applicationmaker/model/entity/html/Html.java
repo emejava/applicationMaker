@@ -18,8 +18,7 @@ public class Html {
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " lang=" +
-                lang +
+                " lang=" + "\"" + lang + "\"" +
                 ">" +
                 head +
                 "\n" +

@@ -17,13 +17,11 @@ public class Form extends Element{
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
-                " action=" +
-                "\"" + action + "\"" +
-                " method=" +
-                "\"" + method + "\"" +
+                " class=" + "\"" + getClassName() + "\"" +
+                " action=" + "\"" + action + "\"" +
+                " method=" + "\"" + method + "\"" +
                 ">" +
                 "</" +
                 getClass().getName().toLowerCase() +

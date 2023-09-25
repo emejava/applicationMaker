@@ -17,9 +17,9 @@ public class H extends Element{
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() + number +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
+                " class=" + "\"" + getClassName() + "\"" +
                 ">" +
                 text +
                 "</" +

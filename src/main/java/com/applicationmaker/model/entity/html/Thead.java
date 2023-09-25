@@ -16,9 +16,9 @@ public class Thead extends Element{
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
+                " class=" + "\"" + getClassName() + "\"" +
                 ">" +
                 tr +
                 "</" +

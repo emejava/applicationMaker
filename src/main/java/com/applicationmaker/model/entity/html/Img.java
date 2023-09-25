@@ -9,8 +9,9 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Span extends Element{
-    private String text;
+public class Img extends Element{
+    private String src;
+    private String alt;
 
     @Override
     public String toString() {
@@ -19,10 +20,8 @@ public class Span extends Element{
                 " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
                 " class=" + "\"" + getClassName() + "\"" +
-                ">" +
-                text +
-                "</" +
-                getClass().getName().toLowerCase() +
+                " src=" + "\"" + src + "\"" +
+                " alt=" + "\"" + alt + "\"" +
                 ">";
     }
 }

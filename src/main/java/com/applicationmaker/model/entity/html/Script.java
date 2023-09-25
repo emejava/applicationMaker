@@ -9,18 +9,15 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-public class Span extends Element{
-    private String text;
+public class Script {
+    private String src;
 
     @Override
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getIdName() + "\"" +
-                " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassName() + "\"" +
+                " src=" + "\"" + src + "\"" +
                 ">" +
-                text +
                 "</" +
                 getClass().getName().toLowerCase() +
                 ">";

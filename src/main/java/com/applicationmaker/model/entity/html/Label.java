@@ -17,9 +17,9 @@ public class Label extends Element{
     public String toString() {
         return "<" +
                 getClass().getName().toLowerCase() +
-                " id=" + "\"" + getId() + "\"" +
+                " id=" + "\"" + getIdName() + "\"" +
                 " style=" + "\"" + getStyle() + "\"" +
-                " class=" + "\"" + getClassAttribute() + "\"" +
+                " class=" + "\"" + getClassName() + "\"" +
                 " for= " + forId +
                 ">" +
                 text +
