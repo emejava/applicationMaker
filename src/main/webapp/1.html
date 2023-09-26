@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            left: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content .header {
+            background: red;
+            padding: 16px;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background-color: #ccc;
+            height: 250px;
+        }
+
+        .column a {
+            float: none;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .column a:hover {
+            background-color: #ddd;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body style="background-color:white;">
+
+<div class="navbar">
+    <div class="dropdown">
+        <button class="dropbtn">Classes
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="header">
+                <h2>Menu</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <input type="checkbox" id="access" name="access" value="access">
+                    <label for="access" class="h3"><b>Access</b></label><br>
+                    <input type="checkbox" id="idAccess" name="id" value="id">
+                    <label for="idAccess">Id</label><br>
+                    <input type="checkbox" id="phoneNumber" name="phoneNumber" value="phoneNumber">
+                    <label for="phoneNumber">PhoneNumber</label><br>
+                    <input type="checkbox" id="instagramId" name="instagramId" value="instagramId">
+                    <label for="instagramId">Instagram Id</label><br>
+                    <input type="checkbox" id="telegramId" name="telegramId" value="telegramId">
+                    <label for="telegramId">Telegram Id</label><br>
+                    <input type="checkbox" id="email" name="email" value="email">
+                    <label for="email">Email</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="attachment" name="attachment" value="attachment">
+                    <label for="attachment" class="h3"><b>Attachment</b></label><br>
+                    <input type="checkbox" id="idAttach" name="id" value="id">
+                    <label for="idAttach">Id</label><br>
+                    <input type="checkbox" id="typeAttach" name="type" value="type">
+                    <label for="typeAttach">Type</label><br>
+                    <input type="checkbox" id="addressAttach" name="address" value="address">
+                    <label for="addressAttach">Address</label><br>
+                    <input type="checkbox" id="descriptionAttach" name="description" value="description">
+                    <label for="descriptionAttach">Description</label><br>
+                    <input type="checkbox" id="title" name="title" value="title">
+                    <label for="title">Title</label><br>
+                    <input type="checkbox" id="referenceCode" name="referenceCode" value="referenceCode">
+                    <label for="referenceCode">Reference Code</label><br>
+                    <input type="checkbox" id="size" name="size" value="size">
+                    <label for="size">Size</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="car" name="car" value="car">
+                    <label for="car" class="h3"><b>car</b></label><br>
+                    <input type="checkbox" id="idCar" name="id" value="id">
+                    <label for="idCar">Id</label><br>
+                    <input type="checkbox" id="typeCar" name="type" value="type">
+                    <label for="typeCar">Type</label><br>
+                    <input type="checkbox" id="system" name="system" value="system">
+                    <label for="system">System</label><br>
+                    <input type="checkbox" id="model" name="model" value="model">
+                    <label for="model">Model</label><br>
+                    <input type="checkbox" id="capacity" name="capacity" value="capacity">
+                    <label for="capacity">Capacity</label><br>
+                    <input type="checkbox" id="fuel" name="fuel" value="fuel">
+                    <label for="fuel">Fuel</label><br>
+                    <input type="checkbox" id="motorNumber" name="motorNumber" value="motorNumber">
+                    <label for="motorNumber">Motor Number</label><br>
+                    <input type="checkbox" id="wheel" name="wheel" value="wheel">
+                    <label for="wheel">Wheel</label><br>
+                    <input type="checkbox" id="bodyNumber" name="bodyNumber" value="bodyNumber">
+                    <label for="bodyNumber">Body Number</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="carExtra" name="carExtra" value="carExtra">
+                    <label for="carExtra" class="h3"><b>Car Extra</b></label><br>
+                    <input type="checkbox" id="idCarEx" name="id" value="id">
+                    <label for="idCarEx">Id</label><br>
+                    <input type="checkbox" id="mileage" name="mileage" value="mileage">
+                    <label for="mileage">Mileage</label><br>
+                    <input type="checkbox" id="damage" name="damage" value="damage">
+                    <label for="damage">Damage</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="document" name="document" value="document">
+                    <label for="document" class="h3"><b>Document</b></label><br>
+                    <input type="checkbox" id="idDoc" name="id" value="id">
+                    <label for="idDoc">Id</label><br>
+                    <input type="checkbox" id="dateTime" name="dateTime" value="dateTime">
+                    <label for="dateTime">Date Time</label><br>
+                    <input type="checkbox" id="titleDoc" name="title" value="title">
+                    <label for="titleDoc">Title</label><br>
+                    <input type="checkbox" id="code" name="code" value="code">
+                    <label for="code">Code</label><br>
+                    <input type="checkbox" id="detail" name="detail" value="detail">
+                    <label for="detail">Detail</label><br>
+                    <input type="checkbox" id="typedoc" name="type" value="type">
+                    <label for="typedoc">Type</label><br>
+                    <input type="checkbox" id="userDoc" name="user" value="user">
+                    <label for="userDoc">User</label><br>
+                    <input type="checkbox" id="amount" name="amount" value="amount">
+                    <label for="amount">Amount</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="diver" name="diver" value="diver">
+                    <label for="diver" class="h3"><b>Diver</b></label><br>
+                    <input type="checkbox" id="idDriver" name="id" value="id">
+                    <label for="idDriver">Id</label><br>
+                    <input type="checkbox" id="typeDriver" name="type" value="type">
+                    <label for="typeDriver">Type</label><br>
+                    <input type="checkbox" id="name" name="name" value="name">
+                    <label for="name">Name</label><br>
+                    <input type="checkbox" id="nationalCode" name="nationalCode" value="nationalCode">
+                    <label for="nationalCode">National Code</label><br>
+                    <input type="checkbox" id="licenseDate" name="licenseDate" value="licenseDate">
+                    <label for="licenseDate">License Date</label><br>
+                    <input type="checkbox" id="birthDate" name="birthDate" value="birthDate">
+                    <label for="birthDate">Birth Date</label><br>
+                    <input type="checkbox" id="expireDate" name="expireDate" value="expireDate">
+                    <label for="expireDate">Expire Date</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="education" name="education" value="education">
+                    <label for="education" class="h3"><b>Education</b></label><br>
+                    <input type="checkbox" id="idEdu" name="id" value="id">
+                    <label for="idEdu">Id</label><br>
+                    <input type="checkbox" id="level" name="level" value="level">
+                    <label for="level">Level</label><br>
+                    <input type="checkbox" id="degree" name="degree" value="degree">
+                    <label for="degree">Degree</label><br>
+                    <input type="checkbox" id="instituteName" name="instituteName" value="instituteName">
+                    <label for="instituteName">Institute Name</label><br>
+                    <input type="checkbox" id="duration" name="duration" value="duration">
+                    <label for="duration">Duration</label><br>
+                    <input type="checkbox" id="averagePoint" name="averagePoint" value="averagePoint">
+                    <label for="averagePoint">Average Point</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="expertise" name="expertise" value="expertise">
+                    <label for="expertise" class="h3"><b>Expertise</b></label><br>
+                    <input type="checkbox" id="idEx" name="id" value="id">
+                    <label for="idEx">Id</label><br>
+                    <input type="checkbox" id="typeEx" name="type" value="type">
+                    <label for="typeEx">Type</label><br>
+                    <input type="checkbox" id="levelEx" name="level" value="level">
+                    <label for="levelEx">Level</label><br>
+                    <input type="checkbox" id="institute" name="institute" value="institute">
+                    <label for="institute">Institute</label><br>
+                    <input type="checkbox" id="durationEx" name="duration" value="duration">
+                    <label for="durationEx">Duration</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="health" name="health" value="health">
+                    <label for="health" class="h3"><b>Health</b></label><br>
+                    <input type="checkbox" id="idHealth" name="id" value="id">
+                        <label for="idHealth">Id</label><br>
+                    <input type="checkbox" id="insuranceHealth" name="insurance" value="insurance">
+                    <label for="insuranceHealth">Insurance</label><br>
+                    <input type="checkbox" id="drugs" name="drugs" value="drugs">
+                    <label for="drugs">Drugs</label><br>
+                    <input type="checkbox" id="weight" name="weight" value="weight">
+                    <label for="weight">Weight</label><br>
+                    <input type="checkbox" id="height" name="height" value="height">
+                    <label for="height">Height</label><br>
+                    <input type="checkbox" id="bloodPressure" name="bloodPressure" value="bloodPressure">
+                    <label for="bloodPressure">Blood Pressure</label><br>
+                    <input type="checkbox" id="heartRate" name="heartRate" value="heartRate">
+                    <label for="heartRate">Heart Rate</label><br>
+                    <input type="checkbox" id="disease" name="disease" value="disease">
+                    <label for="disease">Disease</label><br>
+                    <input type="checkbox" id="reputation" name="reputation" value="reputation">
+                    <label for="reputation">Reputation</label><br>
+                    <input type="checkbox" id="allergies" name="allergies" value="allergies">
+                    <label for="allergies">Allergies</label><br>
+                    <input type="checkbox" id="injuries" name="injuries" value="injuries">
+                    <label for="injuries">Injuries</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="insurance" name="insurance" value="insurance">
+                    <label for="insurance" class="h3"><b>Insurance</b></label><br>
+                    <input type="checkbox" id="idInsurance" name="id" value="id">
+                    <label for="idInsurance">Id</label><br>
+                    <input type="checkbox" id="expireDateInsurance" name="expireDate" value="expireDate">
+                    <label for="expireDateInsurance">Expire Date</label><br>
+                    <input type="checkbox" id="typeInsurance" name="type" value="type">
+                    <label for="typeInsurance">Type</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="job" name="job" value="job">
+                    <label for="job" class="h3"><b>Job</b></label><br>
+                    <input type="checkbox" id="idJob" name="id" value="id">
+                    <label for="idJob">Id</label><br>
+                    <input type="checkbox" id="position" name="position" value="position">
+                    <label for="position">Position</label><br>
+                    <input type="checkbox" id="durationJob" name="duration" value="duration">
+                    <label for="durationJob">Duration</label><br>
+                    <input type="checkbox" id="referenceDetail" name="referenceDetail" value="referenceDetail">
+                    <label for="referenceDetail">Reference Detail</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="lesson" name="lesson" value="lesson">
+                    <label for="lesson" class="h3"><b>Lesson</b></label><br>
+                    <input type="checkbox" id="idLess" name="id" value="id">
+                    <label for="idLess">Id</label><br>
+                    <input type="checkbox" id="department" name="department" value="department">
+                    <label for="department">Department</label><br>
+                    <input type="checkbox" id="nameLess" name="name" value="name">
+                    <label for="nameLess">Name</label><br>
+                    <input type="checkbox" id="lecturer" name="lecturer" value="lecturer">
+                    <label for="lecturer">Lecturer</label><br>
+                    <input type="checkbox" id="lecture" name="lecture" value="lecture">
+                    <label for="lecture">Lecture</label><br>
+                    <input type="checkbox" id="dateLess" name="date" value="date">
+                    <label for="dateLess">Date</label><br>
+                    <input type="checkbox" id="timeLess" name="time" value="time">
+                    <label for="timeLess">Time</label><br>
+                    <input type="checkbox" id="durationLess" name="duration" value="duration">
+                    <label for="durationLess">Duration</label><br>
+                    <input type="checkbox" id="detailLess" name="detail" value="detail">
+                    <label for="detailLess">Detail</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="military" name="military" value="military">
+                    <label for="military" class="h3"><b>Military</b></label><br>
+                    <input type="checkbox" id="idMilitary" name="id" value="id">
+                    <label for="idMilitary">Id</label><br>
+                    <input type="checkbox" id="startDate" name="startDate" value="startDate">
+                    <label for="startDate">Start Date</label><br>
+                    <input type="checkbox" id="endTime" name="endTime" value="endTime">
+                    <label for="endTime">End Time</label><br>
+                    <input type="checkbox" id="typeMilitary" name="type" value="type">
+                    <label for="typeMilitary">Type</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="organization" name="organization" value="organization">
+                    <label for="organization" class="h3"><b>Organization</b></label><br>
+                    <input type="checkbox" id="idOrg" name="id" value="id">
+                    <label for="idOrg">Id</label><br>
+                    <input type="checkbox" id="nameOrg" name="name" value="name">
+                    <label for="nameOrg">Name</label><br>
+                    <input type="checkbox" id="typeOrg" name="type" value="type">
+                    <label for="typeOrg">Type</label><br>
+                    <input type="checkbox" id="field" name="field" value="field">
+                    <label for="field">Field</label><br>
+                    <input type="checkbox" id="manager" name="manager" value="manager">
+                    <label for="manager">Manager</label><br>
+                    <input type="checkbox" id="slogan" name="slogan" value="slogan">
+                    <label for="slogan">Slogan</label><br>
+                    <input type="checkbox" id="addressOrg" name="address" value="address">
+                    <label for="addressOrg">Address</label><br>
+                    <input type="checkbox" id="phoneNumberOrg" name="phoneNumber" value="phoneNumber">
+                    <label for="phoneNumberOrg">phoneNumber</label><br>
+                    <input type="checkbox" id="descriptionOrg" name="description" value="description">
+                    <label for="descriptionOrg">Description</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="person" name="person" value="person">
+                    <label for="person" class="h3"><b>Person</b></label><br>
+                    <input type="checkbox" id="idPerson" name="id" value="id">
+                    <label for="idPerson">Id</label><br>
+                    <input type="checkbox" id="namePerson" name="name" value="name">
+                    <label for="namePerson">Name</label><br>
+                    <input type="checkbox" id="family" name="family" value="family">
+                    <label for="family">Family</label><br>
+                    <input type="checkbox" id="birthDatePerson" name="birthDate" value="birthDate">
+                    <label for="birthDatePerson">Birth Date</label><br>
+                    <input type="checkbox" id="fatherName" name="fatherName" value="fatherName">
+                    <label for="fatherName">Father Name</label><br>
+                    <input type="checkbox" id="gender" name="gender" value="gender">
+                    <label for="gender">Gender</label><br>
+                    <input type="checkbox" id="nationalCodePerson" name="nationalCode" value="nationalCode">
+                    <label for="nationalCodePerson">National Code</label><br>
+                    <input type="checkbox" id="expireDatePerson" name="expireDate" value="expireDate">
+                    <label for="expireDatePerson">Expire Date</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="section" name="section" value="section">
+                    <label for="section" class="h3"><b>Section</b></label><br>
+                    <input type="checkbox" id="idSection" name="id" value="id">
+                    <label for="idSection">Id</label><br>
+                    <input type="checkbox" id="nameSection" name="name" value="name">
+                    <label for="nameSection">Name</label><br>
+                    <input type="checkbox" id="groupSec" name="group" value="group">
+                    <label for="groupSec">Group</label><br>
+                    <input type="checkbox" id="head" name="head" value="head">
+                    <label for="head">Head</label><br>
+                    <input type="checkbox" id="aim" name="aim" value="aim">
+                    <label for="aim">Aim</label><br>
+                    <input type="checkbox" id="parent" name="parent" value="parent">
+                    <label for="parent">Parent</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="service" name="service" value="service">
+                    <label for="service" class="h3"><b>Service</b></label><br>
+                    <input type="checkbox" id="idService" name="id" value="id">
+                    <label for="idService">Id</label><br>
+                    <input type="checkbox" id="groupServ" name="group" value="group">
+                    <label for="groupServ">Group</label><br>
+                    <input type="checkbox" id="subGroupServ" name="subGroup" value="subGroup">
+                    <label for="subGroupServ">Sub Group</label><br>
+                    <input type="checkbox" id="provider" name="provider" value="provider">
+                    <label for="provider">Provider</label><br>
+                    <input type="checkbox" id="nameServ" name="name" value="name">
+                    <label for="nameServ">Name</label><br>
+                    <input type="checkbox" id="day" name="day" value="day">
+                    <label for="day">Day</label><br>
+                    <input type="checkbox" id="startTimeServ" name="startTime" value="startTime">
+                    <label for="startTimeServ">Start Time</label><br>
+                    <input type="checkbox" id="endTimeServ" name="endTime" value="endTime">
+                    <label for="endTimeServ">End Time</label><br>
+                    <input type="checkbox" id="descriptionServ" name="description" value="description">
+                    <label for="descriptionServ">Description</label><br>
+                    <input type="checkbox" id="progress" name="progress" value="progress">
+                    <label for="progress">Progress</label><br>
+                    <input type="checkbox" id="price" name="price" value="price">
+                    <label for="price">Price</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="stuff" name="stuff" value="stuff">
+                    <label for="stuff" class="h3"><b>Stuff</b></label><br>
+                    <input type="checkbox" id="idStuff" name="id" value="id">
+                    <label for="idStuff">Id</label><br>
+                    <input type="checkbox" id="groupStuff" name="group" value="group">
+                    <label for="groupStuff">Group</label><br>
+                    <input type="checkbox" id="subGroupStuff" name="subGroup" value="subGroup">
+                    <label for="subGroupStuff">Sub Group</label><br>
+                    <input type="checkbox" id="nameStuff" name="name" value="name">
+                    <label for="nameStuff">Name</label><br>
+                    <input type="checkbox" id="codeStuff" name="code" value="code">
+                    <label for="codeStuff">Code</label><br>
+                    <input type="checkbox" id="barcode" name="barcode" value="barcode">
+                    <label for="barcode">Barcode</label><br>
+                    <input type="checkbox" id="modelStuff" name="model" value="model">
+                    <label for="modelStuff">Model</label><br>
+                    <input type="checkbox" id="detailStuff" name="detail" value="detail">
+                    <label for="detailStuff">Detail</label><br>
+                    <input type="checkbox" id="brand" name="brand" value="brand">
+                    <label for="brand">Brand</label><br>
+                    <input type="checkbox" id="expireDateStuff" name="expireDate" value="expireDate">
+                    <label for="expireDateStuff">Expire Date</label><br>
+                    <input type="checkbox" id="priceStuff" name="price" value="price">
+                    <label for="priceStuff">Price</label><br>
+                </div>
+
+                <div class="column">
+                    <input type="checkbox" id="user" name="user" value="user">
+                    <label for="user" class="h3"><b>User</b></label><br>
+                    <input type="checkbox" id="idUser" name="id" value="id">
+                    <label for="idUser">Id</label><br>
+                    <input type="checkbox" id="status" name="status" value="status">
+                    <label for="status">Status</label><br>
+                    <input type="checkbox" id="userName" name="userName" value="userName">
+                    <label for="userName">Username</label><br>
+                    <input type="checkbox" id="password" name="password" value="password">
+                    <label for="password">Password</label><br>
+                    <input type="checkbox" id="nickName" name="nickName" value="nickName">
+                    <label for="nickName">Nickname</label><br>
+                    <input type="checkbox" id="role" name="role" value="role">
+                    <label for="role">Role</label><br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
