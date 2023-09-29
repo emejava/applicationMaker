@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../db/style.css">
+    <title>DB Conf sender</title>
+</head>
+<body>
+<form action="/dbConfig" method="get">
+    <select name="dbs">
+        <option name="oracleDb" value="oracle">oracle</option>
+        <option name="mysqlDb" value="mysql">mysql</option>
+        <option name="postgresDb" value="postgres">postgres</option>
+        <option name="mongoDb" value="mongodb">mongodb</option>
+    </select>
+    <select name="dependencies">
+        <option name="mvnDependency" value="MvnDependency">Mvn-Dependency</option>
+        <option name="gradleDependency" value="GradleDependency">Gradle-dependency</option>
+    </select>
+    <select name="jdkVersions">
+        <option name="jdk8" value="JDK8">JDK-8</option>
+        <option name="jdk11" value="JDK11">JDK-11</option>
+        <option name="jdk17" value="JDK17">JDK-17</option>
+    </select>
+    <hr>
+    <input type="text" name="dbUsername" pattern="[A-Za-z1-9]{4,10}" placeholder="username" maxlength="20" required>
+    <input type="text" name="dbPassword" pattern="[A-Za-z1-9]{4,10}" placeholder="Password" maxlength="20" required><br>
+    <input type="text" name="hostName" pattern="[localhost||1-9.]" placeholder="hostName" maxlength="15" required> <!-- 255.255.255.255  length = 15 (with .) -->
+    <input type="text" name="serverPort" pattern="[1111-9999]{4}" placeholder="serverPort" maxlength="4" required>
+    <input type="text" name="dbName" pattern="[A-Za-z1-9]{3,20}" placeholder="Table name(dbName)" maxlength="20" required><br>
+    <input type="submit" value="confirm">
+</form>
+</body>
+</html>
