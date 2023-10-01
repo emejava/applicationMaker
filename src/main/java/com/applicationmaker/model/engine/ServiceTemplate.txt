@@ -1,0 +1,59 @@
+package &PROJECT_GROUP&.&PROJECT_NAME&.model.entity;
+
+import &PROJECT_GROUP&.&PROJECT_NAME&.model.repository.CrudRepository;
+import java.util.List;
+
+public class &ENTITY_NAME&Service {
+
+    //------SINGLETON----------------------------------------------------
+    private static &ENTITY_NAME&Service service = new &ENTITY_NAME&Service();
+
+    private &ENTITY_NAME&Service(){
+    }
+
+    public static &ENTITY_NAME&Service getService() {
+            return service;
+    }
+
+    //-------INSERT------------------------------------------------------
+    public &ENTITY_NAME& save(&ENTITY_NAME& entity) throws Exception {
+        try(CrudRepository<&ENTITY_NAME&, Long> repository = new CrudRepository()){
+            return repository.insert(entity);
+        }
+    }
+
+    //-------UPDATE------------------------------------------------------
+    public &ENTITY_NAME& edit(&ENTITY_NAME& entity) throws Exception {
+        try(CrudRepository<&ENTITY_NAME&, Long> repository = new CrudRepository()){
+            return repository.update(entity);
+        }
+    }
+
+    //-------PHYSICAL-REMOVE---------------------------------------------
+    public &ENTITY_NAME& delete(Long id) throws Exception {
+        try(CrudRepository<&ENTITY_NAME&, Long> repository = new CrudRepository()){
+            return repository.physicalDelete(&ENTITY_NAME&.class, id);
+        }
+    }
+
+    //-------LOGICAL-REMOVE----------------------------------------------
+    public &ENTITY_NAME& logicalDelete(&ENTITY_NAME& entity) throws Exception {
+        try (CrudRepository<&ENTITY_NAME&, Long> repository = new CrudRepository()) {
+             return repository.logicalDelete(entity);
+        }
+    }
+
+    //------FIND-ALL-----------------------------------------------------
+    public List<&ENTITY_NAME&> findAll() throws Exception {
+        try (CrudRepository<&ENTITY_NAME&, Long> repository = new CrudRepository<>()) {
+             return repository.selectAll(&ENTITY_NAME&.class);
+        }
+    }
+
+    //------FIND-BY-ID---------------------------------------------------
+    public &ENTITY_NAME& findById(Long id) throws Exception {
+        try (CrudRepository<&ENTITY_NAME&, Long> repository = new CrudRepository()) {
+            return repository.selectById(&ENTITY_NAME&.class, id);
+        }
+    }
+}
