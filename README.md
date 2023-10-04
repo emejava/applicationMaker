@@ -5,8 +5,9 @@
   
 ## TO RUN AND WRITE THIS PROJECT'S CODES :
 📂 there is a folder named "need4all" that you're gonna need BUT what's in it? :<br>
+♨️ Jakarta EE 10<br>
 👾 JDK v11<br>
-🐱 Tomcat v10.1.5<br>
+🐱 TomEE v9<br>
 🔮 AND everything that we will <b>NEED TO USE</b>.
 
 ## ⚠️ ATTENTION :
