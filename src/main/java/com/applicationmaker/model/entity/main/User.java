@@ -1,6 +1,7 @@
 
 package com.applicationmaker.model.entity.main;
 
+import com.applicationmaker.model.entity.Base;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

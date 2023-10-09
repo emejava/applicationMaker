@@ -13,7 +13,7 @@
 </form>
 
 <div id="dataTable"></div>
-<button onclick="showDataOnTable('dataTable', '/rest/group')">fetch</button>
+<button onclick="showDataOnTable('dataTable', '/rest')">fetch</button>
 
 <script>
     async function showDataOnTable(tableDiv, url) {

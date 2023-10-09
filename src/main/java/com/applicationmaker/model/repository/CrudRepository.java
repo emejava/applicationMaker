@@ -2,7 +2,6 @@ package com.applicationmaker.model.repository;
 
 import com.applicationmaker.model.common.JPA;
 import com.applicationmaker.model.entity.Base;
-import com.applicationmaker.model.entity.Group;
 import jakarta.persistence.*;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;

@@ -20,7 +20,7 @@
             <property name="hibernate.format_sql" value="true"/>
             <!--            <property name="hibernate.connection.autocommit" value="true"/>-->
 
-            <property name="tomee.jpa.factory.lazy" value="true"/>
+<!--            <property name="tomee.jpa.factory.lazy" value="true"/>-->
         </properties>
     </persistence-unit>
 
